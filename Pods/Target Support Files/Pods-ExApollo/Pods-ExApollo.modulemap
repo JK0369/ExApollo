@@ -1,0 +1,6 @@
+framework module Pods_ExApollo {
+  umbrella header "Pods-ExApollo-umbrella.h"
+
+  export *
+  module * { export * }
+}
