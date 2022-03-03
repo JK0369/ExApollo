@@ -18,6 +18,8 @@
 		C6AF3E6C27D052900005EC45 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = C6AF3E6B27D052900005EC45 /* schema.json */; };
 		C6AF3E6F27D054C90005EC45 /* MyQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF3E6E27D054C90005EC45 /* MyQuery.graphql.swift */; };
 		C6AF3E7127D054D70005EC45 /* Types.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF3E7027D054D70005EC45 /* Types.graphql.swift */; };
+		C6AF3E7327D05C880005EC45 /* MyAPI+ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF3E7227D05C880005EC45 /* MyAPI+ApolloClient.swift */; };
+		C6AF3E7527D063290005EC45 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF3E7427D063290005EC45 /* TokenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		C6AF3E6B27D052900005EC45 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		C6AF3E6E27D054C90005EC45 /* MyQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQuery.graphql.swift; sourceTree = "<group>"; };
 		C6AF3E7027D054D70005EC45 /* Types.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.graphql.swift; sourceTree = "<group>"; };
+		C6AF3E7227D05C880005EC45 /* MyAPI+ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyAPI+ApolloClient.swift"; sourceTree = "<group>"; };
+		C6AF3E7427D063290005EC45 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		E2C89E006298821C57154EFD /* Pods-ExApollo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExApollo.release.xcconfig"; path = "Target Support Files/Pods-ExApollo/Pods-ExApollo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +111,8 @@
 				4A90990C27CDCF4F005155EF /* MyQuery.graphql */,
 				C6AF3E7027D054D70005EC45 /* Types.graphql.swift */,
 				C6AF3E6E27D054C90005EC45 /* MyQuery.graphql.swift */,
+				C6AF3E7227D05C880005EC45 /* MyAPI+ApolloClient.swift */,
+				C6AF3E7427D063290005EC45 /* TokenManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -253,7 +259,9 @@
 				C629AA5327CCBD36007E4BA8 /* ViewController.swift in Sources */,
 				C6AF3E6F27D054C90005EC45 /* MyQuery.graphql.swift in Sources */,
 				C629AA4F27CCBD36007E4BA8 /* AppDelegate.swift in Sources */,
+				C6AF3E7327D05C880005EC45 /* MyAPI+ApolloClient.swift in Sources */,
 				C629AA5127CCBD36007E4BA8 /* SceneDelegate.swift in Sources */,
+				C6AF3E7527D063290005EC45 /* TokenManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
