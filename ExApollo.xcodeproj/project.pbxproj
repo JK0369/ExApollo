@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4A90990D27CDCF4F005155EF /* MyQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 4A90990C27CDCF4F005155EF /* MyQuery.graphql */; };
-		4A90991327CE2378005155EF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90991227CE2377005155EF /* API.swift */; };
 		79A1469BC1453372E84DADDD /* Pods_ExApollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848C5057A3AA922D262F9001 /* Pods_ExApollo.framework */; };
 		C629AA4F27CCBD36007E4BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C629AA4E27CCBD36007E4BA8 /* AppDelegate.swift */; };
 		C629AA5127CCBD36007E4BA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C629AA5027CCBD36007E4BA8 /* SceneDelegate.swift */; };
@@ -17,12 +16,13 @@
 		C629AA5827CCBD38007E4BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C629AA5727CCBD38007E4BA8 /* Assets.xcassets */; };
 		C629AA5B27CCBD38007E4BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C629AA5927CCBD38007E4BA8 /* LaunchScreen.storyboard */; };
 		C6AF3E6C27D052900005EC45 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = C6AF3E6B27D052900005EC45 /* schema.json */; };
+		C6AF3E6F27D054C90005EC45 /* MyQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF3E6E27D054C90005EC45 /* MyQuery.graphql.swift */; };
+		C6AF3E7127D054D70005EC45 /* Types.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF3E7027D054D70005EC45 /* Types.graphql.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		400E7A25640177DB4C79D696 /* Pods-ExApollo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExApollo.debug.xcconfig"; path = "Target Support Files/Pods-ExApollo/Pods-ExApollo.debug.xcconfig"; sourceTree = "<group>"; };
 		4A90990C27CDCF4F005155EF /* MyQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyQuery.graphql; sourceTree = "<group>"; };
-		4A90991227CE2377005155EF /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		848C5057A3AA922D262F9001 /* Pods_ExApollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExApollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C629AA4B27CCBD36007E4BA8 /* ExApollo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExApollo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C629AA4E27CCBD36007E4BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +33,8 @@
 		C629AA5A27CCBD38007E4BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C629AA5C27CCBD38007E4BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6AF3E6B27D052900005EC45 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		C6AF3E6E27D054C90005EC45 /* MyQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQuery.graphql.swift; sourceTree = "<group>"; };
+		C6AF3E7027D054D70005EC45 /* Types.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.graphql.swift; sourceTree = "<group>"; };
 		E2C89E006298821C57154EFD /* Pods-ExApollo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExApollo.release.xcconfig"; path = "Target Support Files/Pods-ExApollo/Pods-ExApollo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,18 +88,27 @@
 		C629AA4D27CCBD36007E4BA8 /* ExApollo */ = {
 			isa = PBXGroup;
 			children = (
-				4A90991227CE2377005155EF /* API.swift */,
+				C6AF3E6D27D054080005EC45 /* API */,
 				C629AA4E27CCBD36007E4BA8 /* AppDelegate.swift */,
 				C629AA5027CCBD36007E4BA8 /* SceneDelegate.swift */,
 				C629AA5227CCBD36007E4BA8 /* ViewController.swift */,
 				C6AF3E6B27D052900005EC45 /* schema.json */,
-				4A90990C27CDCF4F005155EF /* MyQuery.graphql */,
 				C629AA5427CCBD36007E4BA8 /* Main.storyboard */,
 				C629AA5727CCBD38007E4BA8 /* Assets.xcassets */,
 				C629AA5927CCBD38007E4BA8 /* LaunchScreen.storyboard */,
 				C629AA5C27CCBD38007E4BA8 /* Info.plist */,
 			);
 			path = ExApollo;
+			sourceTree = "<group>";
+		};
+		C6AF3E6D27D054080005EC45 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4A90990C27CDCF4F005155EF /* MyQuery.graphql */,
+				C6AF3E7027D054D70005EC45 /* Types.graphql.swift */,
+				C6AF3E6E27D054C90005EC45 /* MyQuery.graphql.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\n\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://apollo-fullstack-tutorial.herokuapp.com/graphql\" ExApollo/schema.json\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\n\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://apollo-fullstack-tutorial.herokuapp.com/graphql\" ExApollo/schema.json\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --namespace=MyAPI --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API\n";
 		};
 		FA6F0C05EAB8776928A517BF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -238,9 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AF3E7127D054D70005EC45 /* Types.graphql.swift in Sources */,
 				C629AA5327CCBD36007E4BA8 /* ViewController.swift in Sources */,
+				C6AF3E6F27D054C90005EC45 /* MyQuery.graphql.swift in Sources */,
 				C629AA4F27CCBD36007E4BA8 /* AppDelegate.swift in Sources */,
-				4A90991327CE2378005155EF /* API.swift in Sources */,
 				C629AA5127CCBD36007E4BA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

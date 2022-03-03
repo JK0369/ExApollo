@@ -14,24 +14,24 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     // singletown으로 사용하지 않으면 sessionInvalidated에러 발생
-    let apollo = ApolloClient(url: URL(string: "https://apollo-fullstack-tutorial.herokuapp.com/graphql")!)
-    apollo.fetch(query: MyQueryQuery()) { result in
-      switch result {
-      case .success(let data):
-        print(data.data?.launches.cursor)
-      case .failure(let error):
-        print(error) // sessionInvalidated
-      }
-    }
-    
-    Network.shared.apollo.fetch(query: MyQueryQuery()) { result in
-      switch result {
-      case .success(let data):
-        print(data.data?.launches.cursor)
-      case .failure(let error):
-        print(error)
-      }
-    }
+//    let apollo = ApolloClient(url: URL(string: "https://apollo-fullstack-tutorial.herokuapp.com/graphql")!)
+//    apollo.fetch(query: MyQueryQuery()) { result in
+//      switch result {
+//      case .success(let data):
+//        print(data.data?.launches.cursor)
+//      case .failure(let error):
+//        print(error) // sessionInvalidated
+//      }
+//    }
+//    
+//    Network.shared.apollo.fetch(query: MyQueryQuery()) { result in
+//      switch result {
+//      case .success(let data):
+//        print(data.data?.launches.cursor)
+//      case .failure(let error):
+//        print(error)
+//      }
+//    }
   }
 }
  
